@@ -29,6 +29,7 @@
 -->
 
 <!-- These start with /dreamstudio/ because page is loaded into site root using server.transfer -->
+
 <link rel='stylesheet' href='/dreamstudio/css/plyr.css'>
 <script src='/dreamstudio/js/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
 <script src='/dreamstudio/js/plyr.min.js'></script>
@@ -36,6 +37,11 @@
 <style>
 #fixedHeader {
 	border-bottom:1px solid #eee;
+}
+@media (max-width: 800px) {
+	.hideMobile {
+	    display: none;
+	}
 }
 </style>
 
@@ -50,7 +56,7 @@
 
 	<div style="overflow:auto; border-left:0px solid #ccc; height:60px; margin:23px 40px 0 10px; padding-left:16px; font-size:13px">
 
-		<div class="navLinks" style="float:right;padding-top:6px">
+		<div class="navLinks hideMobile" style="float:right;padding-top:6px">
 			
 			<a href="../"><span style="white-space: nowrap">Home</span></a> | 
 			<a href="../software"><span style="white-space: nowrap">Software</span></a> | 
@@ -78,7 +84,7 @@
 
 <div class="lite">
 
-  <h3 style="text-align:center;"><span style="color:#777">Atlanta-</span>Based / <span style="white-space: nowrap"><span style="color:#777">Georgia</span> Focused</span></h3>
+  <h3 style="text-align:center;"><span style="color:#777">Atlanta-</span>Based <span class="hideMobile">/ </span><span style="white-space: nowrap"><span style="color:#777">Georgia</span> Focused</span></h3>
 
   <p style="text-align:center">
 		
@@ -108,11 +114,13 @@
 
 			
 			<div class="navLinks">
-				<a href="https://model.earth/community/tools/">Model.Earth</a> | 
-				<a href="https://cameraready.georgia.org/explore/film/">Georgia Camera Ready</a> | 
-				<a href="https://model.georgia.org/localsite/info/">Georgia Data</a> | 
-				<a href="https://model.georgia.org">Model.Georgia</a>
-
+				<a href="https://model.earth/community/tools/">Model.Earth</a> |
+				<a href="https://cameraready.georgia.org/explore/film/">Georgia Camera Ready</a> 
+				<span class="hideMobile">|</span> 
+				<span style="white-space: nowrap;">
+					<a href="https://model.georgia.org/localsite/info/">Georgia Data</a> | 
+					<a href="https://model.georgia.org">Model.Georgia</a>
+				</span>
 				<!--| 
 				<a href="/dreamstudio/resume/Loren-Heyns-Resume-2018.pdf" target="_blank">Project Resume</a>
 				-->
