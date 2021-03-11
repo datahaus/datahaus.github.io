@@ -1,1 +1,3 @@
-# datahaus.github.io
+# DataHaus Live
+
+AI Mentor Network for collaborative design.

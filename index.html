@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<title>DataHaus - We find good design very amusing</title>
+<link type="text/css" rel="stylesheet" href="https://neighborhood.org/localsite/css/base.css" />
+<script type="text/javascript" src="https://neighborhood.org/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="https://neighborhood.org/localsite/js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://neighborhood.org/localsite/js/localsite.js"></script>
+<script type="text/javascript" src="https://neighborhood.org/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="https://neighborhood.org/localsite/js/navigation.js"></script>
+
+<script>
+	param.titleArray = ["data","haus"]
+	param.footer = "/datacenter/footer.html"
+    param.headerLogo = "🎧 "; // headphones
+
+    $(window).scroll(function(){$(".herocenter").css("opacity", 1 - $(window).scrollTop() / 200);});
+</script>
+
+<style>
+    #logoholder { font-size: 32px; }
+    #headerLogo { margin-right: 8px; }
+    /*
+    #header {display: none !important;}
+    .headerbarheight {display: none !important;}
+    .headerbar {display: none !important;}
+    .headerOffset {display: none !important;}
+    .headerOffsetOne {display: none !important;}
+    #footerX {display: none !important;}
+    .headerOffset2 {display: none !important;}
+    #headerFixed {display: none !important;}
+    */
+
+    .bgimg { background-position: 0 0px; }
+  
+  .text-flow {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    padding:15px 20px 15px 20px;
+    background-color: rgba(33,33,33,.85);
+  }
+  .fade-in {
+      animation: fadeIn ease 4s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+    .bgimg-notfixed {
+        background-attachment: scroll;
+    }
+    #play-button {
+        opacity: .8;
+        cursor: pointer;
+    }
+    #play-buttonX:hover {
+        opacity: 1
+    }
+    
+    .mainTitle {
+        font-size: 80px;
+        color: #fff;
+        opacity: .8;
+    }
+    .storybox {
+        clear:both;
+        height:200px;
+    }
+    @media (min-width: 800px) {
+        .storybox {
+            position: absolute;
+            left: 60px;
+            bottom: 40px;
+            height: 420px;
+            width: 420px;
+            background-color: rgba(35, 35, 35, .85);
+            padding: 60px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color:#fff;
+            line-height: 2.6em;
+            font-size: 16px;
+        }
+        #soundControl {
+            position:absolute;
+            top:0px;
+            right:0px;
+            margin:80px 50px 50px 50px;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div style="background:#fff; min-height:150px; line-height:0px; width:100%; position: relative">
+    
+    <!-- logo centered -->
+    <div class="herocenter" style="position: absolute; z-index:2; top:25%">
+        <div>
+            <!--
+            <img src="img/logo/projectmuse-text.png" style="width:100%;max-width:250px; margin-left:20px" />
+            -->
+            <div class="mainTitle">
+            datahaus
+            </div>
+        </div>
+
+        <div class="fade-in text-flowX" style="position:fixed; left:-28px; right:28px; 
+        text-align:center; margin-top:80px; color:#fff; font-size:24px">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; welcome to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-weight:800; opacity:1">your</span> audioscape.
+
+            <br><br>
+            <div id="play-button" style="font-size: 48px; margin-left:2px">
+            <a href="#location">▶️</a>
+            </div>
+        </div>
+
+
+    </div>
+
+        
+    
+
+    <!--
+    
+    -->
+
+    <div class="lazy bgimg bgimg-notfixed" data-src="img/bkgd/water-night.jpg" style="opacity:.85; position:relative;">
+        <img src="img/bkgd/water-night.jpg" style="opacity:0; width:100%">
+
+        <a name="location" style="position:absolute; left:0px; bottom:800px"></a>
+    </div>
+
+    <div class="storybox">
+        <div style="displayX:none">
+            5,000 nautical miles from Athens, on the leeward side of Alexandria, you'll find us along the basalt shoreline, our network  
+            glistening in the twilight surf. Here,&nbsp;near the frozen arctic, we generate your most time sensitive world views. Remote, secluded, well connected and far removed from the confines of our lan-locked days. 
+            <!-- Lord Exodus -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="soundControl">
+  <!--
+  SpaceX Music
+  https://soundcloud.com/juandedeboca
+  -->
+  <!--
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/40641798&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+-->
+</div>
+
+
+<div>
+    <div style="position:absolute; top:0px; right:0px; margin:50px 50px 50px 50px; displayX: none">
+      <!--
+      SpaceX Music
+      https://soundcloud.com/juandedeboca
+      
+      
+      -->
+    </div>
+
+    <div id="footer"></div>
+
+    <a name="home"></a>
+    <div class="lazy bgimg bgimg-notfixed" data-src="img/bkgd/aurora-cabin-hires.jpg" style="position:relative; top:auto; bottom:0px; opacity:.85; line-height: 0px">
+        <img src="img/bkgd/aurora-cabin-hires.jpg" style="opacity:0; width:100%; bottom:0px;">
+
+        <div style="position:absolute; top:50%; left:80px; text-align: center; margin: 0 auto">
+
+            <div class="mainTitle">
+                w e l c o m e
+            </div>
+
+            <div style="clear:both"></div>
+            <br><br>
+            <!--
+        
+            Krishna Blue https://youtu.be/MTn-PirxH1s?t=261 
+            -->
+            <div style="display:none; margin-top:100px">
+                When the house arrives, the light is on, which is a good sign.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script>
+    //loadMarkdown("README.md", "readmeDiv", "_parent");
+    //loadMarkdown("features.md", "featuresDiv", "_parent");
+</script>
+
+</body>
+</html>
